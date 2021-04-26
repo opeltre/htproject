@@ -4,7 +4,7 @@
 
 [tutorial]:https://htmlpreview.github.io/?https://raw.githubusercontent.com/mcwitt/hasktorch/tutorial-tintin/website/tutorial/01-getting-started.html
 
-# Minimal hasktorch project
+# creating a hasktorch project
 
 Download the libtorch dependency in `./libtorch` by downloading
 an archive [here][1] e.g. 
@@ -45,12 +45,15 @@ extra-lib-dirs:
 Require hasktorch dependency in `package.yaml`:
 
 ```yaml
+# ./package.yaml 
+...
+
 dependencies:
 - base >= 4.7 && < 5
 - hasktorch
 ```
 
-You should then be able to load hasktorch within stack:
+You should then be able to load hasktorch within stack.
 
 ```
 $ stack build
@@ -61,4 +64,4 @@ ghci> :t asTensor [1, 2, 3]
 
 # Documentation
 
-Follow the tutorial [here][tutorial] 
+Follow on to the tutorial [here][tutorial].
